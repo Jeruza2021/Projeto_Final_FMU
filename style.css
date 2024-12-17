@@ -1,0 +1,158 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* ===== Primeira Tela ===== */
+
+/* Container com imagem de fundo */
+.container {
+    position: relative;
+    width: 20%;
+    height: 100vh;
+    background-image: url('tela1.png'); /* Imagem como plano de fundo */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Botão interativo na imagem */
+.button-link {
+    position: absolute;
+    bottom: 72px; /* Ajusta a altura conforme o botão na imagem */
+    left: 51%;
+    transform: translateX(-56%);
+    display: block;
+    width: 90px; /* Tamanho aproximado do botão */
+    height: 75px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0); /* Fundo transparente */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    outline: 2px solid rgba(255, 255, 255, 0.8); /* Efeito ao passar o mouse */
+    transition: outline 0.3s ease;
+}
+
+/* ===== Segunda Tela: Tela de Login ===== */
+
+/* Container da tela de login */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Título */
+.login-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #D12D27;
+}
+
+/* Campos de entrada */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botão de login */
+.login-button {
+    background-color: #D12D27;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background-color: #B12621;
+    transition: 0.3s ease;
+}
+
+/* Texto de registro */
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.register-link {
+    color: #D12D27;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== Terceira Tela: Boas-Vindas ===== */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.welcome-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #D12D27;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.return-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #D12D27;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.return-button:hover {
+    background-color: #B12621;
+    transition: 0.3s ease;
+}
